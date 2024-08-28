@@ -1,0 +1,1 @@
+To start app run expo start
