@@ -9,3 +9,7 @@ npx expo install expo-haptics
 npx expo install react-native-reanimated
 
 npx expo install react-native-maps
+npx expo install react-native-map-clustering
+
+npm i @gorhom/bottom-sheet@^4
+npx expo install react-native-gesture-handler
