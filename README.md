@@ -1,1 +1,11 @@
 To start app run expo start
+
+Clerk authentication
+npm install @clerk/clerk-expo
+npx expo install expo-secure-store
+
+npx expo install expo-haptics
+
+npx expo install react-native-reanimated
+
+npx expo install react-native-maps
