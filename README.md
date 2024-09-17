@@ -15,3 +15,5 @@ npm i @gorhom/bottom-sheet@^4
 npx expo install react-native-gesture-handler
 
 npx expo install expo-location
+
+npx expo install expo-image-picker 
