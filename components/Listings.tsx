@@ -6,6 +6,7 @@ import Animated, { FadeInRight, FadeOutLeft } from 'react-native-reanimated'
 import React, { useEffect, useRef, useState } from 'react'
 import { View, Text, StyleSheet, FlatList, ListRenderItem, TouchableOpacity, Image } from 'react-native'
 import { BottomSheetFlatList, BottomSheetFlatListMethods } from '@gorhom/bottom-sheet';
+import Colors from '@/constants/Colors';
 
 interface Props {
   listings: any[];
@@ -53,9 +54,11 @@ const Listings = ({ listings: items, category, refresh }: Props) => {
 
           <Text>{item.room_type}</Text>
 
-          <View style={{ flexDirection: 'row', gap: 4 }}>
-            <Text style={{fontWeight: 'bold'}}>$ {item.price}</Text>
-            <Text>night</Text>
+          <View style={styles.itemBorder}>
+            <View style={{ flexDirection: 'row', gap: 4 }}>
+              <Text style={{fontWeight: 'bold'}}>$ {item.price}</Text>
+              <Text>night</Text>
+            </View>
           </View>
         </Animated.View>
       </TouchableOpacity>
@@ -89,6 +92,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 16,
     marginTop: 4
+  },
+  itemBorder: {
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: Colors.grey,
+    paddingBottom: 30
   }
 })
 
